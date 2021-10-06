@@ -1,15 +1,17 @@
 //1
 function absoluteValue(num){
-  if(num < 0){
-      console.log(num *= -1)
-  }else if(num > 0){
-      console.log(num)
+  if(typeof num === "number"){
+    if(num < 0){
+        return num * -1
+    }else{
+      return num
+  }
   }else{
       return null
   }
 }
 
-console.log(absoluteValue("tee"))
+console.log(absoluteValue("8"))
 
 function multiplesOfFourAndSix() {
     let array = [];
